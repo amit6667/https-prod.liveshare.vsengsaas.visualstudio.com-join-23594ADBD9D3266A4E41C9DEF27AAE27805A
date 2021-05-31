@@ -85,3 +85,77 @@ https://spring.io/tools
 - Install VSCode
 - Create a Github account
 
+
+
+---
+
+# Setting up JDK
+
+Timestamp:16:07
+
+- STS comes up with it's own version of java
+- We want to use Corretto11
+
+
+# New Spring Boot Project (Dependency Injection Examples)
+
+TImestamp: 15:43
+
+
+cognixia.com
+com.cognixia.lockdown
+
+groupid = organizationname.teamname  (not mandatory, depends on company to company)
+
+
+## Raw
+
+move the creation and binding of the dependent objects outside of the class that depends on them.
+
+If any class need some libraries or user defined functionaries we need some dependencies so spring is responsible to create  the instance and inject automatically 
+
+object receives other objects that it depends on.
+
+
+# What does spring bring to Java?
+
+- programming paradigms
+- Brings Declarative paradigm to Java
+
+## DI
+
+Dependency Injection is a concept which is not unique to java.
+
+Spring provides an amazing implementation of DI.
+
+
+## Raws
+
+- Removes boilerplate code from Java Code
+- Abstraction on technologies
+
+# An non industry best practice example of Manual Dependency Injection using Spring
+
+TimeStamp: 16:42
+
+
+## Naming Conventions
+
+- Classes should start with Caps and should be a Noun
+- Function names should be camelCase and a Verb
+
+
+# Coupling
+
+## Case: Change from Lockdown1 to LockdownFirst
+
+1. Right Click -> Refactor -> Rename
+2. Change Class Name at instantiation
+3. Change Class Name at data type declaration
+
+
+# OOPS
+
+- Encapsulation
+- Polymorphism
+- Inheritance
