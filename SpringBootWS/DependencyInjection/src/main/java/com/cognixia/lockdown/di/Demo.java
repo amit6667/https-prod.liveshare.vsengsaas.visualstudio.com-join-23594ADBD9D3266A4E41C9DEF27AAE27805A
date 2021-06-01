@@ -1,6 +1,5 @@
 package com.cognixia.lockdown.di;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -27,7 +26,7 @@ public class Demo {
 	
 	// This is known as Constructor Injection
 	// This is recommended as the best practice
-	@Autowired
+	
 	public Demo(@Qualifier("Lockdown1")Lockdown ld) {
 		System.out.println("Constructor 1");
 		this.ld = ld;

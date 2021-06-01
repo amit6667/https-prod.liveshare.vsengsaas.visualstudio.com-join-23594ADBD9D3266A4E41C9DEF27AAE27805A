@@ -181,3 +181,102 @@ Timestamp: 14:10
 - Setter Injection
 - Property Injection
 
+# Flow for remaining course
+
+MVC
+HTTP API
+CRUD
+REST API
+
+
+# MVC
+
+Timestamp: 15:04
+
+## Raw
+
+MVC came out in 1979
+Java came out in 1989
+HTTP came out in 1991
+
+
+- Model 
+    - Business Class?
+    - Dao Class?
+    - Logic related to service is written in this
+    - JPA Repository
+    - Represents Data
+- View
+    - JavaScript
+    - User Interfaces
+    - JSP
+    - Thymeleaf
+    - many more...
+    - Representation of data for users
+- Controller
+    - @RequestMapping
+    - Handles HTTP Request and Response.
+    - Flow of code execution
+
+
+## MVC
+
+Timestamp: 15:12
+
+- Code Organization
+- Model: All code that conforms to Data Definition Language, and Data Manipulation Language
+- Controller:
+    - Handles Requests
+    - Executes Logic on the Basis of Requests
+    - Returns a Response
+- View:
+    - To present response to the user in an interactive
+
+
+- Services
+
+## HTTP vs REST vs API
+
+TimeStamp: 15:19
+
+- HTTP
+    - Protocol for communication
+- Rest
+    - Architectural Style
+    - Constraints
+- API
+    - Black Box
+    - Group of Interfaces
+    - JDK has a lot of APIs
+    - Application Programming Interface
+    - Functional
+    - Network Based: HTTP API
+
+- HTTP APIs
+    - That you can use over HTTP
+
+- REST
+
+# Flow
+
+- HTTP API
+- CRUD
+- RESTful API
+
+# HTTP API
+
+Timestamp: 16:05
+
+Spring MVC: Still had a lot of BoilerPlate
+Spring Web: More abstraction to MVC and uses Spring MVC
+
+
+Spring Initializr: https://start.spring.io/
+
+
+## HTTP Request Methods
+
+- Get
+- POST
+- Delete
+- PUT
