@@ -102,7 +102,7 @@ https://www.youtube.com/watch?v=6wDoopbtEqk
 
 # Spring Boot
 
-- Convention over Code
+- Convention over Configuration
 
 # Dependency Injection
 
@@ -134,3 +134,34 @@ This is known as singleton scope.
 11. I changed the duration property, and reran my program
 12. I did another autowiring
 13. Then I tested the scope.
+
+# Open Discussion: Benefits of Interfaces
+
+Timestamp: 12:20
+
+## Raw
+
+- Multi Inheritance
+- Abstraction
+- Avoid Boilerplate Code
+- Loosely Coupled
+- Incomplete methods
+- no need to repeat code
+- one layer changes did not affect another layer
+
+## Contract
+
+- Agreement
+- You always have to follow it
+
+
+# Use
+
+- Interface are most commonly used as contracts that should not be violated
+
+
+# Demo
+
+1. Created a Lockdown interface
+2. I made Lockdown1 class implement interface
+3. And I autowired the interface
