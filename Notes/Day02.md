@@ -280,3 +280,11 @@ Spring Initializr: https://start.spring.io/
 - POST
 - Delete
 - PUT
+
+# Postman
+
+```
+scoop search postman
+scoop bucket add extras
+scoop install postman
+```
