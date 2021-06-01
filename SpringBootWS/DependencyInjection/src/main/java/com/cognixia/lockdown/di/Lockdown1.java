@@ -2,7 +2,7 @@ package com.cognixia.lockdown.di;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Lockdown1")
 //@Scope("singleton")
 //@Scope("prototype")
 public class Lockdown1 implements Lockdown{

@@ -165,3 +165,10 @@ Timestamp: 12:20
 1. Created a Lockdown interface
 2. I made Lockdown1 class implement interface
 3. And I autowired the interface
+
+
+# Two classes that implement an interface
+
+Timestamp: 12:52
+
+Practice it from the recording
