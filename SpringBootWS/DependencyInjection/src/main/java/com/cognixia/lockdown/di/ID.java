@@ -3,7 +3,7 @@ package com.cognixia.lockdown.di;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("id")
+@Component
 @Primary
 public class ID implements Lockdown{
 

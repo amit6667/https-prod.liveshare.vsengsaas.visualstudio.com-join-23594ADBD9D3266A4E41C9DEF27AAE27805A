@@ -13,6 +13,8 @@ public class DependencyInjectionApplication {
 		
 		Demo demo = (Demo) ctx.getBean("demo");
 		demo.run();
+		
+		
 	}
 
 }

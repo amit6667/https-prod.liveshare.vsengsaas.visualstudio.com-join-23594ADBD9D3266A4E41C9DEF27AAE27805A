@@ -172,3 +172,12 @@ Timestamp: 12:20
 Timestamp: 12:52
 
 Practice it from the recording
+
+# Types of DI
+
+Timestamp: 14:10
+
+- Constructor Injection
+- Setter Injection
+- Property Injection
+
