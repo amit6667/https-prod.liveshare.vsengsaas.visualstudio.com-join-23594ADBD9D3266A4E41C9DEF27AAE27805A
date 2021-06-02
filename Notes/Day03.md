@@ -175,3 +175,15 @@ There is a library in spring which is called jackson. Jackson converts java obje
 
 TimeStamp: 11:37
 
+# Resources
+
+https://developers.redhat.com/
+
+# Story so far
+
+- Handle HTTP Methods
+- Handle HTTP Paths
+- Handle Path Variables
+- Handle Request Body
+- Produce a HTTP Response Code
+- Produce a Response Body
