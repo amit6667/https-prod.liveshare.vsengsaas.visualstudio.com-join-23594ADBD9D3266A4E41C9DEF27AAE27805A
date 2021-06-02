@@ -265,3 +265,13 @@ CRUD - Create Read Update Delete
 - Post /
     - takes request body
     - doesn't take path variable
+
+- Read One
+    - Get
+    - 
+
+# AutoIncrementer
+
+Timestamp: 15:15
+
+- the worst autoincremeter
