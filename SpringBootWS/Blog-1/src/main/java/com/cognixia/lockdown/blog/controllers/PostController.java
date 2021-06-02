@@ -3,6 +3,7 @@ package com.cognixia.lockdown.blog.controllers;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -61,9 +62,27 @@ public class PostController {
 		// this refers to posts.get
 		// post refers to post
 		posts.get(index).copyFromPost(post);
-
+ 
 		
 		return posts.get(index);
 	}
 
+	@DeleteMapping("/{id}")
+	public Post deletePost(@PathVariable("id") Integer id){
+		int index = -1;
+		for (int i = 0; i < posts.size(); i++) {
+
+			if (posts.get(i).getId() == id) {
+				index = i;
+			}
+		}
+		if (index<0) {
+			return new Post();
+		}
+		
+		Post post = posts.get(index);
+		posts.remove(index);
+		
+		return post;
+	}
 }

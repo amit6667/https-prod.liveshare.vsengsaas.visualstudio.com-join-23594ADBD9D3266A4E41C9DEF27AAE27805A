@@ -276,8 +276,19 @@ CRUD - Create Read Update Delete
     - I need a body
     - I need a path variable for id
 
+- Delete One
+    - Delete
+    - I need a path variable for id
+    - I do not need a body
+
 # AutoIncrementer
 
 Timestamp: 15:15
 
 - the worst autoincremeter
+
+
+# To Learn
+
+- Lambda
+- Streams API
