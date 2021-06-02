@@ -187,3 +187,81 @@ https://developers.redhat.com/
 - Handle Request Body
 - Produce a HTTP Response Code
 - Produce a Response Body
+
+
+
+Headless CMS/Blog
+
+
+
+---
+
+# Blog-1
+
+Timestamp: 13:57
+
+## Dependencies
+
+- Spring Web
+- DevTools
+
+## IBP - Layered Architecture
+
+- Packages to denote a layer
+- Controller
+- Model
+
+# Blog
+
+- Posts
+    - id
+    - Title
+    - Content
+    - Author
+    - Date
+    - Likes
+    - Views
+    - Tags
+    - Comments
+        - Authors
+        - Content
+        - Date
+
+
+# Blog-1
+
+- Post
+    - id
+    - Title
+    - Content
+
+CRUD - Create Read Update Delete
+
+- Create
+    - Create One
+    - Create Many
+- Read
+    - Read One
+    - Read Many
+- Update 
+    - Update One
+    - Update Many
+- Delete
+    - Delete one
+    - Delete many
+
+
+- Create    Post
+- Read      Get
+- Update    Put
+- Delete    Delete
+
+# Blog-1 Routes
+
+- Get /
+    - doesn't take request body
+    - doesn't take path variable
+
+- Post /
+    - takes request body
+    - doesn't take path variable

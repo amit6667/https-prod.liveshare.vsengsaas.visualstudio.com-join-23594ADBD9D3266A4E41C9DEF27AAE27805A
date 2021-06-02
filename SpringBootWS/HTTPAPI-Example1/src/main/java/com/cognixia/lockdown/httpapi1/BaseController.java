@@ -36,16 +36,17 @@ public class BaseController {
 		resp.v1=v1;
 		resp.v2=v2;
 		
-		ResponseEntity<Response> respEntity = new ResponseEntity<Response>(resp,HttpStatus.NOT_ACCEPTABLE);
+		ResponseEntity<Response> respEntity = new ResponseEntity<Response>(resp,HttpStatus.OK);
 		return respEntity;
 	}
 	
 	@PostMapping("/jsonResponse/")
-	public Response postJsonResponse(@RequestBody Request req) {
+	public ResponseEntity<Response> postJsonResponse(@RequestBody Request req) {
 		Response resp = new Response();
 		resp.v1=req.name;
 		resp.v2=req.age;
-		return resp;
+		ResponseEntity<Response> respEntity = new ResponseEntity<Response>(resp,HttpStatus.CREATED);
+		return respEntity;
 	}
 	
 	// for paths ending with /, you need to have /
