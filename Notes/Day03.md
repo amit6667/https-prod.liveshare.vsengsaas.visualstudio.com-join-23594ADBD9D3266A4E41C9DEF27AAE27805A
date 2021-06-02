@@ -292,3 +292,9 @@ Timestamp: 15:15
 
 - Lambda
 - Streams API
+
+# Postgres
+
+- Download from https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+- Do not install it yet
