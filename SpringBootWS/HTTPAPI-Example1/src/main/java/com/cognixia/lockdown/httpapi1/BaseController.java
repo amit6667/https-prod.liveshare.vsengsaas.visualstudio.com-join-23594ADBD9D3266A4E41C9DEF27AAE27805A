@@ -2,6 +2,8 @@ package com.cognixia.lockdown.httpapi1;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -31,6 +33,14 @@ public class BaseController {
 		resp.v1=v1;
 		resp.v2=v2;
 		
+		return resp;
+	}
+	
+	@PostMapping("/jsonResponse/")
+	public Response postJsonResponse(@RequestBody Request req) {
+		Response resp = new Response();
+		resp.v1=req.name;
+		resp.v2=req.age;
 		return resp;
 	}
 }

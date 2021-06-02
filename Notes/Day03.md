@@ -1,3 +1,5 @@
+02/06/2021
+
 # Recap
 
 - HTTP methods
@@ -137,6 +139,8 @@ Timestamp: 10:24
 
 ## Producing JSON Response
 
+Timestamp: around 11:00
+
 There are a lot of languages to communicate data
 
 - Let's use JSON for communication between HTTP APIs
@@ -161,8 +165,13 @@ There are a lot of languages to communicate data
 -   name: Faiz
 ```
 
-## Parse Request Body
+- protobuf
 
-TimeStamp: 
 
-- will only work with json
+
+There is a library in spring which is called jackson. Jackson converts java objects into json and vice versa.
+
+## Parse Request Body (only for JSON)
+
+TimeStamp: 11:37
+
