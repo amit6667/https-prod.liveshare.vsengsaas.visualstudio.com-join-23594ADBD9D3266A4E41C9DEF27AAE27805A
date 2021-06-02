@@ -6,7 +6,6 @@ public class Post {
 	private Integer id;
 	private String title;
 	private String content;
-	private String field;
 
 	public void copyFromPost(Post post) {
 		if (post.getContent()!=null) {

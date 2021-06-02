@@ -46,23 +46,22 @@ public class PostController {
 	}
 
 	@PutMapping("/{id}")
-	public Post updatePost(@RequestBody Post post,
-			@PathVariable("id") Integer id) {
-		Integer index =-1;
+	public Post updatePost(@RequestBody Post post, @PathVariable("id") Integer id) {
+		Integer index = -1;
 		for (int i = 0; i < posts.size(); i++) {
 
 			if (posts.get(i).getId() == id) {
-				index=i;
+				index = i;
 			}
 		}
-		
-		if (index <0) {
+
+		if (index < 0) {
 			return new Post();
-		}	
+		}
 		// this refers to posts.get
 		// post refers to post
 		posts.get(index).copyFromPost(post);
-	
+
 		
 		return posts.get(index);
 	}
