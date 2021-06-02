@@ -6,7 +6,19 @@ public class Post {
 	private Integer id;
 	private String title;
 	private String content;
+	private String field;
 
+	public void copyFromPost(Post post) {
+		if (post.getContent()!=null) {
+			this.setContent(post.getContent());
+		}
+		
+		if (post.getTitle()!=null) {
+			this.setTitle(post.getTitle());
+		}
+		
+	}
+	
 	// -------------------------Getters and Setters-------------------------------
 
 	public Integer getId() {

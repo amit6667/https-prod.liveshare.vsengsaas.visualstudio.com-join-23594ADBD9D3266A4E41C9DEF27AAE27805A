@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,21 +20,21 @@ public class PostController {
 	// post0
 	// post1
 	// post2
-	
+
 	@GetMapping("/")
-	public List<Post> getPosts(){
+	public List<Post> getPosts() {
 		return posts;
 	}
-	
+
 	@GetMapping("/{id}")
 	public Post getPost(@PathVariable("id") Integer id) {
-		for (int i=0; i<posts.size();i++) {
-			
-			if(posts.get(i).getId()==id) {
+		for (int i = 0; i < posts.size(); i++) {
+
+			if (posts.get(i).getId() == id) {
 				return posts.get(i);
-			} 
+			}
 		}
-		
+
 		return new Post();
 	}
 
@@ -43,5 +44,27 @@ public class PostController {
 		posts.add(post);
 		return post;
 	}
+
+	@PutMapping("/{id}")
+	public Post updatePost(@RequestBody Post post,
+			@PathVariable("id") Integer id) {
+		Integer index =-1;
+		for (int i = 0; i < posts.size(); i++) {
+
+			if (posts.get(i).getId() == id) {
+				index=i;
+			}
+		}
+		
+		if (index <0) {
+			return new Post();
+		}	
+		// this refers to posts.get
+		// post refers to post
+		posts.get(index).copyFromPost(post);
 	
+		
+		return posts.get(index);
+	}
+
 }

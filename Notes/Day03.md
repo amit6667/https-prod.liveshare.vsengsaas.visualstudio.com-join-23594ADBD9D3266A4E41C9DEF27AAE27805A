@@ -268,7 +268,13 @@ CRUD - Create Read Update Delete
 
 - Read One
     - Get
-    - 
+    - takes path variable
+    - I don't need a body
+
+- Update One
+    - Put
+    - I need a body
+    - I need a path variable for id
 
 # AutoIncrementer
 
