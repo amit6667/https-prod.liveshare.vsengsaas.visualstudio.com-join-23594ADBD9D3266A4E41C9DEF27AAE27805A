@@ -78,3 +78,31 @@ Better Response
 ```
 
 200 OK
+
+
+# Refactoring Get One
+
+Timestamp: 10:47
+
+This is optional and depends on project requirement
+
+```json
+{
+    "id": null,
+    "title": null,
+    "content": null
+}
+```
+
+to
+
+```json
+{
+    "message":"Record Retrieved Successfully",
+    "post":{
+        "id": null,
+        "title": null,
+        "content": null
+    }
+}
+```

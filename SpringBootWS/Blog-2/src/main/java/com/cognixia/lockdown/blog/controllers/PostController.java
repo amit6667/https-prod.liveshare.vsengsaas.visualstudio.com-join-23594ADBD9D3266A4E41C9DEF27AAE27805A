@@ -29,9 +29,10 @@ public class PostController {
 	public ResponseEntity<Response> getPosts() {
 		HttpStatus status;
 		Response resp = new Response();
+		
 		if (posts.size() == 0) {
 			resp.message = "No records added";
-			status = HttpStatus.NO_CONTENT;
+			status = HttpStatus.OK;
 		} else if (posts.size() == 1) {
 			resp.message = "Single record retrieved";
 			status = HttpStatus.OK;
@@ -39,23 +40,30 @@ public class PostController {
 			resp.message = posts.size() + " record(s) retrieved";
 			status = HttpStatus.OK;
 		}
+		
 		resp.posts = posts;
-
 		ResponseEntity<Response> respEntity = new ResponseEntity<Response>(resp, status);
 
 		return respEntity;
 	}
 
 	@GetMapping("/{id}")
-	public Post getPost(@PathVariable("id") Integer id) {
+	public ResponseEntity<Response> getPost(@PathVariable("id") Integer id) {
+		Response resp = new Response();
+		resp.message = "Record with id " + id + " not found";
+		HttpStatus status = HttpStatus.NOT_FOUND;
+		
 		for (int i = 0; i < posts.size(); i++) {
 
 			if (posts.get(i).getId() == id) {
-				return posts.get(i);
+				resp.post = posts.get(i);
+				resp.message="Post with id " + id + " found and retrieved";
+				status = HttpStatus.OK;
 			}
 		}
 
-		return new Post();
+		ResponseEntity<Response> respEntity = new ResponseEntity<Response>(resp,status);
+		return respEntity;
 	}
 
 	@PostMapping("/")
